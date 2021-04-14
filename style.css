@@ -15,6 +15,7 @@ body {
   line-height: 1.4;
   margin: 0;
   width: 100%;
+  background-color: whitesmoke;
 }
 
 /* Navigation Begins */
@@ -173,6 +174,7 @@ h2{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 5rem;
 }
 
 .about-container{
@@ -278,13 +280,17 @@ h2{
 
 /* Begin skills and projects section */
 
-.skills-project-container{
+.skills-project-article{
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: whitesmoke;
+  color: #223059;
   font-family: muli,sans-serif;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 5rem;
 }
 
 .seperator{
@@ -301,7 +307,6 @@ h2{
   width: 75%;
   height: 100%;
   margin:auto;
-  background-color: yellow;
 }
 
 .skills-header {
@@ -309,5 +314,9 @@ h2{
   font-weight: 700;
   line-height: 129.69%;
   letter-spacing: 0.03em;
-  margin-top: 0;
+  margin-top: 3rem;
+}
+
+.skills-intro{
+  max-width: 50%;
 }
