@@ -169,7 +169,7 @@ h2{
 .about-article{
   width: 100%;
   min-height: 100vh;
-  background-color:whitesmoke;
+  background-color:var(--dark);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -185,15 +185,15 @@ h2{
   width: 60em;
   height: 40em; 
   margin: 0;
-  background-color:whitesmoke;
+  background-color: var(--dark);
  
 }
 
 #about-image{
  width: 15rem;
  padding: 0;
- border-bottom: 15px solid whitesmoke;
- border-right: 15px solid whitesmoke;
+ border-bottom: 15px solid var(--dark);;
+ border-right: 15px solid var(--dark);;
 }
 
 .about{
@@ -202,9 +202,11 @@ h2{
  font-family: muli,sans-serif;
  font-weight: 400;
  font-style: normal;
+ font-size: 1.2rem;
  display:flex;
  flex-direction: column;
  text-align: start;
+ color: white
 }
 
 .about-header {
@@ -213,15 +215,10 @@ h2{
   margin-bottom: 0;
 }
 
-.project-container{
-  width: 100%;
-  height: 100vh;
-  background-color: #223059;
-}
 
 
 .pattern-dots-xl {
-  background-image: radial-gradient(var(--dark) 1.5px, transparent 1.5px);
+  background-image: radial-gradient(var(--bright-red) 1.5px, transparent 1.5px);
   background-size: calc(10 * 1.5px) calc(10 * 1.5px);
 }
 
@@ -237,7 +234,7 @@ h2{
   width: 50em;
   margin: auto;
   border: 8px solid;
-  border-image: linear-gradient(var(--dark), var(--light)) 50;
+  border-image: linear-gradient(var(--light), var(--medium)) 150;
   border-radius: 5%;
   display: flex;
   flex-direction: row;
@@ -274,8 +271,29 @@ h2{
   width: 250px;
   grid-column: 1 / span 10;
   grid-row: 1;
-  background-color: whitesmoke;
-  border-top: 8px solid whitesmoke;
+  background-color: var(--dark);;
+  border-top: 3px solid var(--dark);;
   z-index: 2;
 }
 
+
+.skills-project-container{
+  width: 100%;
+  height: 100vh;
+  background-color: #223059;
+  font-family: muli,sans-serif;
+}
+
+.section-layout-container{
+  width: 75%;
+  height: 100%;
+  margin:auto;
+  background-color: yellow;
+}
+
+.skills-header {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 129.69%;
+  letter-spacing: 0.03em;
+}
