@@ -169,7 +169,7 @@ h2{
 .about-article{
   width: 100%;
   min-height: 100vh;
-  background-color:var(--dark);
+  background-color:whitesmoke;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -185,32 +185,31 @@ h2{
   width: 60em;
   height: 40em; 
   margin: 0;
-  background-color: var(--dark);
+  background-color:whitesmoke;
  
 }
 
 #about-image{
  width: 15rem;
  padding: 0;
- border-bottom: 15px solid var(--dark);;
- border-right: 15px solid var(--dark);;
+ border-bottom: 15px solid whitesmoke;
+ border-right: 15px solid whitesmoke;
 }
 
 .about{
  margin: 1rem;
  width: 33rem; 
  font-family: muli,sans-serif;
- font-weight: 400;
+ font-weight: 500;
  font-style: normal;
- font-size: 1.2rem;
+ font-size: 1.2em;
  display:flex;
  flex-direction: column;
  text-align: start;
- color: white
 }
 
 .about-header {
-  font-size: 2rem;
+  font-size: 2.3rem;
   align-self: flex-start;
   margin-bottom: 0;
 }
@@ -234,7 +233,7 @@ h2{
   width: 50em;
   margin: auto;
   border: 8px solid;
-  border-image: linear-gradient(var(--light), var(--medium)) 150;
+  border-image: linear-gradient(var(--dark), var(--light)) 50;
   border-radius: 5%;
   display: flex;
   flex-direction: row;
@@ -271,17 +270,31 @@ h2{
   width: 250px;
   grid-column: 1 / span 10;
   grid-row: 1;
-  background-color: var(--dark);;
-  border-top: 3px solid var(--dark);;
+  background-color: whitesmoke;
+  border-top: 8px solid whitesmoke;
   z-index: 2;
 }
 
 
+/* Begin skills and projects section */
+
 .skills-project-container{
   width: 100%;
   height: 100vh;
-  background-color: #223059;
+  background-color: whitesmoke;
   font-family: muli,sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.seperator{
+  height: 30px;
+  width: 100%;
+}
+
+.pattern-dots-sm {
+  background-image: radial-gradient(var(--dark) 1px, transparent 1px);
+  background-size: calc(10 * 1px) calc(10 * 1px);
 }
 
 .section-layout-container{
@@ -296,4 +309,5 @@ h2{
   font-weight: 700;
   line-height: 129.69%;
   letter-spacing: 0.03em;
+  margin-top: 0;
 }
