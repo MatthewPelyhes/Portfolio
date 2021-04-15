@@ -385,6 +385,7 @@ h4 {
 .project-overview{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 35%;
   margin-left: 1em;
 }
@@ -392,4 +393,28 @@ h4 {
 .project-overview p {
   width: 100%;
   justify-self: flex-start;
+}
+
+.links-container{
+  width:fit-content;
+  margin: 0 auto;
+}
+
+.project-links{
+  display: inline-block;
+  text-decoration: none;
+  padding: 6px 8px;
+  margin-right: 10px;
+  border-radius: 3px;
+  border: 2px solid;
+  border-image: linear-gradient(var(--dark), var(--light)) 15;
+  color: var(--dark);
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  transition: all .3s ease-in-out;
+}
+
+.project-links:hover{
+  background-color: var(--dark);
+  color:var(--light);
+  transform: scale(1.08); 
 }
