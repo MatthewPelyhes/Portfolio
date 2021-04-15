@@ -1,7 +1,7 @@
 :root {
-  --dark: rgba(34, 48, 89, 1);
+  --dark: #223059;
   --medium: #0c9af2;
-  --light: rgba(159, 234, 242, 1);
+  --light: #9feaf2;
   --bright-red: rgba(216, 4, 4, 1);
   --dark-red: rgba(114, 9, 9, 1);
   font-family: 'Ubuntu', sans-serif;
@@ -41,11 +41,9 @@ body {
   border: 2px solid var(--light);
   padding: 5px;
   border-radius: 5px;
+  height: 52px;
 }
-.logo-container:hover {
-  border-color: white;
-  cursor: pointer;
-}
+
 .logo {
   font-weight: 1.5rem;
   margin: 0;
@@ -73,6 +71,13 @@ body {
   
 }
 
+#twitter{
+
+}
+
+#github{
+
+}
 /* Navigation End */
 
 .main-container {
@@ -293,6 +298,7 @@ h2{
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 5rem;
+  
 }
 
 .seperator{
@@ -344,14 +350,14 @@ h2{
 
 /* Begin project section */
 
-#project-header{
+.header-secondary{
   margin-top: 7rem;
 }
 
 
 .project-container{
   max-height: 270px;
-  margin-top: 3rem;
+  margin: 5rem 0;
   display: flex;
   justify-content: space-between;
 }
@@ -406,8 +412,7 @@ h4 {
   padding: 6px 8px;
   margin-right: 10px;
   border-radius: 3px;
-  border: 2px solid;
-  border-image: linear-gradient(var(--dark), var(--light)) 10;
+  border: 2px solid var(--dark);
   color: var(--dark);
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   transition: all .3s ease-in-out;
@@ -416,7 +421,59 @@ h4 {
 .project-links:hover{
   background-color: var(--dark);
   color:var(--light);
-  border-image: none;
   border-color: var(--dark);
-  transform: scale(1.08); 
+  transform: scale(1.05); 
 }
+
+.project-title{
+  margin: 0;
+  font-size: 1.5rem;
+  align-self: center;
+}
+
+#contact-text{
+  margin-bottom: 3rem;
+}
+
+#contact-me{
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 600;
+  padding-bottom: 3px;
+  border-bottom: 2px solid var(--light);
+  transition: all .2s ease-in-out;
+}
+
+#contact-me:hover{
+  border-bottom-color: var(--dark);
+  transform: scale(1.02); 
+}
+
+/* Begin footer styles */
+
+footer{
+  width: 100%;
+  height: 6rem;
+  background-color: whitesmoke;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+background-image:  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%230c9af2' fill-opacity='0.8' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.shoe{
+  width: 75%;
+  height: 100%;
+  max-width: 1240px;
+  margin: 2rem auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+ #footer-logo{
+  border-color: var(--bright-red);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#footer-logo h3{
+  color: var(--bright-red); 
+} 
