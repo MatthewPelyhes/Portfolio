@@ -407,7 +407,7 @@ h4 {
   margin-right: 10px;
   border-radius: 3px;
   border: 2px solid;
-  border-image: linear-gradient(var(--dark), var(--light)) 15;
+  border-image: linear-gradient(var(--dark), var(--light)) 10;
   color: var(--dark);
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   transition: all .3s ease-in-out;
@@ -416,5 +416,7 @@ h4 {
 .project-links:hover{
   background-color: var(--dark);
   color:var(--light);
+  border-image: none;
+  border-color: var(--dark);
   transform: scale(1.08); 
 }
