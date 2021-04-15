@@ -68,15 +68,14 @@ body {
 
 .nav-link:hover{
   color: white;
-  
 }
 
-#twitter{
-
+#twitter:hover{
+  color: #1da1f2;
 }
 
-#github{
-
+#github:hover{
+  color: black;
 }
 /* Navigation End */
 
@@ -127,12 +126,6 @@ h2{
   transition: box-shadow 1s ease-in-out infinite;
 }
 
-/* .image-container:hover{
-  box-shadow: 0 0 0 1.5px rgba(34, 48, 89, 0.9),
-              1px 1px 1px 1px #0c9af2,
-              1.5px 1.5px 1.5px 1.5px rgba(159, 234, 242, 1);
-} */
-
 .dev-highlight {
   color:rgba(159, 234, 242, 1);
 }
@@ -150,28 +143,6 @@ h2{
   width: 7rem;
   margin: 0 1rem 0 0;
 }
-
-/* .star {
-  margin-right: 5px;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 10px solid var(--bright-red);
-  position: relative;
-  align-self: stretch;
-}
-.star:after {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 10px solid var(--bright-red);
-  position: absolute;
-  content: "";
-  top: 3.5px;
-  left: -5px;
-} */
 
 .about-article{
   width: 100%;
@@ -467,13 +438,29 @@ background-image:  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/
   display: flex;
   text-align: center;
   align-items: center;
+  justify-content: space-between;
 }
 
  #footer-logo{
   border-color: var(--bright-red);
   background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  justify-self: flex-start;
+  margin: 0;
 }
 
 #footer-logo h3{
   color: var(--bright-red); 
 } 
+
+footer .nav-link{
+  color: var(--dark);
+}
+
+#linkedin:hover{
+  color: #0a66c2;
+}
+
+a{
+  text-decoration: none;
+}
