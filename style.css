@@ -578,6 +578,9 @@ a{
   .nav{
     padding-right: 15px;
   }
+  h2{
+    margin-bottom: 0.5rem;
+  }
 }
 
 @media only screen and (max-height: 700px){
