@@ -606,4 +606,18 @@ a{
   .intro-container{
     margin-top: 6rem;
   }
+
+  .image-container{
+    width:10rem;
+    height: 10rem;
+  }
+}
+
+@media only screen and (max-width: 280px){
+  .intro-container{
+    margin-top: 8rem;
+  }
+  .nav{
+    display: none;
+  }
 }
