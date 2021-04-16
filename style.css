@@ -567,4 +567,43 @@ a{
     width: 100%;
     height: auto;
   }
+
+  .logo-container{
+    margin-left: 0.5rem;;
+  }
+  .head-container{
+    margin-top: 1rem;
+  }
+
+  .nav{
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (max-height: 700px){
+  .intro-container{
+    margin-top: 8rem;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+  .logo-container{
+    margin-left: 0.5rem;;
+  }
+  .head-container{
+    margin-top: 1rem;
+  }
+
+  .nav{
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 350px){
+    .nav-link{
+    font-size: 0.8rem;
+  }
+  .intro-container{
+    margin-top: 6rem;
+  }
 }
