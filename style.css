@@ -124,25 +124,14 @@ h2{
   box-shadow: 0 0 0 3px rgba(159, 234, 242, 1);
   margin: auto;
   transition: box-shadow 1s ease-in-out infinite;
+  align-self: center;
 }
 
 .dev-highlight {
   color:rgba(159, 234, 242, 1);
 }
 
-.chi-flag {
-  display: flex;
-  justify-content: flex-end;
-}
 
-.star-container {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  width: 7rem;
-  margin: 0 1rem 0 0;
-}
 
 .about-article{
   width: 100%;
@@ -151,7 +140,9 @@ h2{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 5rem;
+  margin-right: 0;
 }
 
 .about-container{
@@ -163,9 +154,8 @@ h2{
   color:#223059;
   width: 60em;
   height: 40em; 
-  margin: 0;
+  margin: auto;
   background-color:whitesmoke;
- 
 }
 
 #about-image{
@@ -331,6 +321,7 @@ h2{
   margin: 5rem 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .project-image{
@@ -463,4 +454,102 @@ footer .nav-link{
 
 a{
   text-decoration: none;
+}
+
+/* Media Queries Go Here  */
+
+@media only screen and (max-width: 1400px){
+  .project-stack{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+  }
+
+  .project-container{
+    max-height: 300px;
+  }
+
+  .section-layout-container{
+    width: 90%;
+  }
+  .main-container{
+    min-width: none;
+    min-height: none;
+    width:auto;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .project-container{
+    max-height: 650px;
+    justify-content: center;
+  }
+  .project-stack{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    align-items: center;
+  }
+ 
+  .project-overview{
+    margin: 2rem;
+    width: 400px;
+  }
+
+  .project-title{
+    align-self: start;
+  }
+
+  .links-container{
+    align-self: start;
+    margin:0;
+  }
+}
+
+@media only screen and (max-width: 965px){
+  .about-article{
+    min-height: none;
+  }
+  .about-container{
+    width: 100%;
+    height: 100%;
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .about-wrapper-left{
+    /* grid-column: 3 / span 6;
+    grid-row: 1 / span 2; */
+    display: none;
+  }
+  
+  .about{
+    width: 100%;
+  }
+
+  .about-header{
+    align-self: center;
+  }
+  .about-wrapper-right{
+    width: 100%;
+    grid-column: 2 / span 10;
+    grid-row: 1;
+  }
+}
+
+@media only screen and (max-width: 686px){
+  .project-stack{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    align-items: center;
+  }
+
+  .project-image{
+    max-width: 100%;
+  }
+
+  .main-container{
+    max-width: 100vh;
+    width:unset;
+  }
 }
