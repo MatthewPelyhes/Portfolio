@@ -293,6 +293,7 @@ h2{
 .skills-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -542,12 +543,20 @@ a{
 }
 
 @media only screen and (max-width: 686px){
+  .project-container{
+    justify-content: start;
+  }
   .project-stack{
     display: flex;
     flex-direction: row;
-    margin: 2rem 2rem 0 2rem;
+    margin: 2rem 2rem 0 0;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  .project-overview{
+    margin: 2rem 2rem 0 0;
+    width: auto;
   }
 
   .project-image{
