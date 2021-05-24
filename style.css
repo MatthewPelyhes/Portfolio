@@ -381,7 +381,7 @@ h4 {
 }
 
 .project-links:hover{
-  background-color: var(--dark);
+  background-color: rgba(34, 48, 89, 0.65);
   color:var(--light);
   border-color: var(--dark);
   transform: scale(1.05); 
