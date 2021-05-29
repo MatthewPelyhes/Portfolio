@@ -1,5 +1,5 @@
 //Set your APP_ID
-var APP_ID = "APP_ID";
+var APP_ID = "pddzazn3";
 
 window.intercomSettings = {
     app_id: APP_ID
