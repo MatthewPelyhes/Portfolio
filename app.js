@@ -20,7 +20,6 @@ Lots of content incoming
 Lots of content incoming
 Lots of content incoming
 Lots of content incoming
-Lots of content ${filler}
 `
 
 showNew.addEventListener('click', ()=>{
