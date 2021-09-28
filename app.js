@@ -11,7 +11,6 @@ Lots of content incoming
 Lots of content incoming
 Lots of content incoming
 Lots of content incoming
-Lots of content incoming
 `
 
 showNew.addEventListener('click', ()=>{
